@@ -118,9 +118,11 @@ const CreateTrip = () => {
     }
     const Logout =()=>{
         googleLogout();
-        localStorage.clear()
-        window.location.reload();
-        navigate('/')
+        localStorage.clear();
+        navigate('/');
+        setTimeout(()=>{
+            window.location.reload();
+        },100)
 
     }
 

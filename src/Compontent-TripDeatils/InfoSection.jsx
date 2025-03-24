@@ -9,13 +9,15 @@ const InfoSection = ({trip}) => {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
   console.log(user);
-  const logout=()=>{
-    googleLogout();
-    localStorage.clear();
-    window.location.reload();
-    navigate("/");
-
-  }
+  const logout =()=>{
+          googleLogout();
+          localStorage.clear();
+          navigate('/');
+          setTimeout(()=>{
+              window.location.reload();
+          },100)
+  
+      }
   
   return (
     <div className='bg-white  w-full'>
