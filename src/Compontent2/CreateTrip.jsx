@@ -120,9 +120,9 @@ const CreateTrip = () => {
         googleLogout();
         localStorage.clear();
         navigate('/');
-        setTimeout(()=>{
-            window.location.reload();
-        },100)
+     //   setTimeout(()=>{
+      //      window.location.reload();
+     //   },100)
 
     }
 

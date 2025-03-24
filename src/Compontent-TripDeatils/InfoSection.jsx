@@ -8,14 +8,14 @@ const InfoSection = ({trip}) => {
   
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
-  console.log(user);
+  //console.log(user);
   const logout =()=>{
           googleLogout();
           localStorage.clear();
           navigate('/');
-          setTimeout(()=>{
-              window.location.reload();
-          },100)
+       //   setTimeout(()=>{
+            //  window.location.reload();
+          //},100)
   
       }
   
